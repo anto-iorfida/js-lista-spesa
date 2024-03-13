@@ -13,3 +13,28 @@
 // - Ricordiamoci di incrementare il contatore, o comunque di inserire una condizione di uscita, all'interno ciclo while
 
 
+// prendere la variabile assegnata 
+const list = [
+    'Latte',
+    'Cacao',
+    'Insalata',
+    'Carote',
+    'Pomodori',
+    'Piatti pronti'
+];
+
+// prendere id dell'ul nell'html 
+let printList = document.querySelector('#list')
+
+
+// creare ciclo for per lavorare su ogni singolo elemento
+for(let i = 0 ; i < list.length ; i++){
+
+    let listElement = list[i];
+    
+    // inserire ogni singolo elemento dentro ul nell'html 
+    printList.innerHTML += `<li>${listElement}</li>`
+
+
+}
+
